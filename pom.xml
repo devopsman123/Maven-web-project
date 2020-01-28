@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.nandihal</groupId>
-  <artifactId>Maven-Project</artifactId>
+  <artifactId>Maven-web-Project</artifactId>
   <packaging>war</packaging>
   <version>1.0-Release</version>
   <name>Maven Web Project</name>
@@ -133,7 +133,13 @@
  
 </distributionManagement>
 
-
+<repositories>
+<repository>
+<id>nexus</id>
+<name>remoterepo</name>
+<url>http://localhost:8081/repository/maven-shared-remote-repo-jan2020/</url>
+</repository>
+</repositories>
 	
   <build>
     <plugins>
