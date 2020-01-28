@@ -116,24 +116,24 @@
 		</dependency>
   </dependencies>
 
-<!--
+
 <distributionManagement>
 
 <repository>
 <id>nexus</id>
 <name>releaserepo</name>
-<url>http://localhost:8088/inv-batch/repository/maven-web-project-release/</url>
+<url>http://localhost:8081/repository/maven-devops-release-jan2020//</url>
 </repository>
 
 <snapshotRepository>
 <id>nexus</id>
 <name>snapshotrepo</name>
-<url>http://localhost:8088/inv-batch/repository/maven-web-project-snapshot/</url>
+<url>http://localhost:8081/repository/maven-devops-snapshot-jan2020//</url>
 </snapshotRepository>
  
 </distributionManagement>
 
--->
+
 	
   <build>
     <plugins>
