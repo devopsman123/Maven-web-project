@@ -1,0 +1,12 @@
+node
+{
+    stage("code checkout")
+    {
+       git credentialsId: 'jenkins', url: 'https://github.com/devopsman123/Maven-web-project.git' 
+    }
+    stage("maven build")
+    {
+        def mvnHOME = tool name: 'Windows-Maven', type: 'maven'
+        bat "${mvnHOME}/bin/mvn clean package"
+    }
+}
